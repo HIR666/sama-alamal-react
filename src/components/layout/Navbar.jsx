@@ -162,7 +162,7 @@ export default function Navbar({ mode, toggleMode }) {
         <Toolbar sx={{ minHeight: 80, gap: 2 }}>
           <Box sx={{ flexGrow: 1 }}>
             <Typography variant="h5" sx={{ fontWeight: 900 }}>
-              سما الأمل
+              سمـــا الأمل
             </Typography>
             <Typography
               className="english-brand"

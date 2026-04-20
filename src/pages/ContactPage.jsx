@@ -13,6 +13,7 @@ import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import BusinessRoundedIcon from "@mui/icons-material/BusinessRounded";
 import PageHero from "../components/common/PageHero";
+import { Phone } from "@mui/icons-material";
 
 const contactImage =
   "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80";
@@ -57,7 +58,7 @@ export default function ContactPage() {
                       <Box sx={{ px: 2 }}>
                         <Typography variant="h6">العنوان</Typography>
                         <Typography color="text.secondary">
-                          العراق - بغداد - المأمون
+                          العراق - بغداد - حي المتنبي
                         </Typography>
                       </Box>
                     </Stack>
@@ -68,7 +69,11 @@ export default function ContactPage() {
                   <CardContent sx={{ p: 3.5 }}>
                     <Stack direction="row" spacing={2} alignItems="center">
                       <MailOutlineRoundedIcon color="primary" />
-                      <Box sx={{ px: 2 }}>
+                      <Box
+                        component={"a"}
+                        href="mailto:info@sama-alamil.com"
+                        sx={{ textDecoration: "none", color: "inherit", px: 2 }}
+                      >
                         <Typography variant="h6">البريد الإلكتروني</Typography>
                         <Typography color="text.secondary">
                           info@sama-alamil.com
@@ -78,19 +83,23 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                {/* <Card>
+                <Card>
                   <CardContent sx={{ p: 3.5 }}>
                     <Stack direction="row" spacing={2} alignItems="center">
-                      <BusinessRoundedIcon color="primary" />
-                      <Box sx={{ px: 2 }}>
-                        <Typography variant="h6">اسم الشركة</Typography>
+                      <Phone color="primary" />
+                      <Box
+                        component={"a"}
+                        href="tel:+9647757111741"
+                        sx={{ textDecoration: "none", color: "inherit", px: 2 }}
+                      >
+                        <Typography variant="h6">رقم الهاتف</Typography>
                         <Typography color="text.secondary">
-                          شركة سما الأمل الذهبية العامة محدودة المسؤولية
+                          +964 775 711 1741
                         </Typography>
                       </Box>
                     </Stack>
                   </CardContent>
-                </Card> */}
+                </Card>
               </Stack>
             </Grid>
 
