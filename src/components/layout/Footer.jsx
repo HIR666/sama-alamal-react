@@ -22,11 +22,11 @@ export default function Footer() {
             className="english-brand"
             sx={{ fontSize: 22, opacity: 0.9 }}
           >
-            SAMA AL AMIL
+            SAMA AL AMAL
           </Typography>
 
           <Typography color="text.secondary">
-            العراق - بغداد - المأمون
+            العراق - بغداد - حي المتنبي
           </Typography>
 
           <Divider />
@@ -44,7 +44,7 @@ export default function Footer() {
               <Typography
                 component={RouterLink}
                 to="/"
-                sx={{ color: "text.secondary", textDecoration: "none" }}
+                sx={{ color: "text.secondary", textDecoration: "none", px: 1 }}
               >
                 الرئيسية
               </Typography>

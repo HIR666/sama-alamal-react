@@ -4,59 +4,54 @@ import {
   Button,
   Card,
   CardContent,
-  Chip,
   Container,
   Grid,
   Stack,
   Typography,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
-import ImportExportRoundedIcon from "@mui/icons-material/ImportExportRounded";
-import LocalShippingRoundedIcon from "@mui/icons-material/LocalShippingRounded";
+import ConstructionRoundedIcon from "@mui/icons-material/ConstructionRounded";
+import ElectricalServicesRoundedIcon from "@mui/icons-material/ElectricalServicesRounded";
 import HandshakeRoundedIcon from "@mui/icons-material/HandshakeRounded";
 import SectionHeading from "../components/common/SectionHeading";
 
-import heroLight from "../assets/heroLight.webp";
-import heroDark from "../assets/heroDark.webp";
+const heroImage =
+  "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=80";
 
 const showcaseImage =
   "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80";
 
 const services = [
   {
-    title: "التجارة العامة",
-    text: "مزاولة مختلف الأعمال التجارية المشروعة وفق احتياجات السوق.",
+    title: "المواد الإنشائية",
+    text: "توفير مواد إنشائية تلائم احتياجات المشاريع والسوق العراقي.",
     icon: <BusinessCenterRoundedIcon />,
   },
   {
-    title: "الاستيراد والتصدير",
-    text: "تنسيق العمليات التجارية داخل العراق وخارجه بكفاءة ومهنية.",
-    icon: <ImportExportRoundedIcon />,
+    title: "مواد البناء",
+    text: "تجارة مواد البناء بمختلف أنواعها لتلبية احتياجات العملاء.",
+    icon: <ConstructionRoundedIcon />,
   },
   {
-    title: "تجهيز السلع والبضائع",
-    text: "توفير السلع والبضائع للجهات الحكومية والخاصة والتجارية.",
-    icon: <LocalShippingRoundedIcon />,
-  },
-  {
-    title: "بناء العلاقات التجارية",
-    text: "تأسيس شراكات مستقرة مع الموردين والعملاء والشركاء.",
+    title: "العدد الإنشائية",
+    text: "توفير عدد إنشائية مناسبة لأعمال البناء والتجهيز.",
     icon: <HandshakeRoundedIcon />,
+  },
+  {
+    title: "العدد الكهربائية",
+    text: "تجارة العدد الكهربائية بجميع أنواعها ضمن احتياجات السوق.",
+    icon: <ElectricalServicesRoundedIcon />,
   },
 ];
 
 const features = [
   "شركة مسجلة رسميًا",
   "التزام مهني في التعامل",
-  "فهم لاحتياجات جهات متعددة داخل العراق وخارجه",
-  "بناء الثقة والاستمرارية في العلاقات التجارية",
+  "فهم لاحتياجات السوق العراقي",
+  "بناء الثقة والاستمرارية في علاقات التوريد",
 ];
 
 export default function HomePage() {
-  const theme = useTheme();
-  const heroImage = theme.palette.mode === "dark" ? heroDark : heroLight;
-
   return (
     <>
       <Box sx={{ pt: { xs: 8, md: 11 }, pb: { xs: 8, md: 11 } }}>
@@ -64,8 +59,6 @@ export default function HomePage() {
           <Grid container spacing={5} alignItems="center">
             <Grid item xs={12} md={6}>
               <Stack spacing={3}>
-                <Chip label="شركة تجارة عامة في العراق" color="primary" />
-
                 <Typography
                   variant="h1"
                   sx={{
@@ -73,7 +66,7 @@ export default function HomePage() {
                     maxWidth: 760,
                   }}
                 >
-                  شركة سما الأمل الذهبية العامة محدودة المسؤولية
+                  شركة سما الأمل الذهبية
                 </Typography>
 
                 <Typography
@@ -83,7 +76,7 @@ export default function HomePage() {
                     color: "text.secondary",
                   }}
                 >
-                  SAMA AL AMIL
+                  SAMA AL AMAL
                 </Typography>
 
                 <Typography
@@ -94,10 +87,9 @@ export default function HomePage() {
                     maxWidth: 700,
                   }}
                 >
-                  شركة عراقية متخصصة في مجال التجارة العامة، وتعمل على مزاولة
-                  الأعمال التجارية المرتبطة بالاستيراد والتصدير والمقايضة وتجهيز
-                  السلع والبضائع بما يلبي احتياجات مختلف الجهات داخل العراق
-                  وخارجه.
+                  شركة عراقية متخصصة لتجارة المواد الإنشائية ومواد البناء والعدد
+                  الإنشائية والكهربائية بجميع أنواعها، التي تلبي احتياجات السوق
+                  العراقي.
                 </Typography>
 
                 <Typography
@@ -149,7 +141,7 @@ export default function HomePage() {
                 <Box
                   component="img"
                   src={heroImage}
-                  alt="Corporate trade and business"
+                  alt="Construction materials and building supplies"
                   sx={{
                     width: "100%",
                     height: "100%",
@@ -168,8 +160,8 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="خدماتنا"
-            title="حلول تجارية مرنة تلائم متطلبات السوق"
-            description="نعمل ضمن إطار التجارة العامة ونقدّم خدمات مهنية تشمل الاستيراد والتصدير وتجهيز السلع والبضائع وبناء علاقات تعاون داخل العراق وخارجه."
+            title="مواد بناء وعدد إنشائية وكهربائية تلائم احتياجات السوق"
+            description="نوفّر مواد إنشائية ومواد بناء وعدد إنشائية وكهربائية بجميع أنواعها، بما ينسجم مع احتياجات السوق العراقي والعملاء في قطاع البناء والتجهيز."
           />
 
           <Grid container spacing={3}>
@@ -223,7 +215,7 @@ export default function HomePage() {
                 <Box
                   component="img"
                   src={showcaseImage}
-                  alt="Shipping containers and logistics"
+                  alt="Building materials supply and business logistics"
                   sx={{
                     width: "100%",
                     height: 420,

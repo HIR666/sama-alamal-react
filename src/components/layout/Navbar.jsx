@@ -42,7 +42,7 @@
 //               className="english-brand"
 //               sx={{ fontSize: 18, opacity: 0.85, lineHeight: 1.1 }}
 //             >
-//               SAMA AL AMIL
+//               SAMA AL AMAL
 //             </Typography>
 //           </Box>
 
@@ -162,13 +162,13 @@ export default function Navbar({ mode, toggleMode }) {
         <Toolbar sx={{ minHeight: 80, gap: 2 }}>
           <Box sx={{ flexGrow: 1 }}>
             <Typography variant="h5" sx={{ fontWeight: 900 }}>
-              سمـــا الأمل
+              سمــا الأمــل
             </Typography>
             <Typography
               className="english-brand"
               sx={{ fontSize: 18, opacity: 0.85, lineHeight: 1.1 }}
             >
-              SAMA AL AMIL
+              SAMA AL AMAL
             </Typography>
           </Box>
 
